@@ -1,0 +1,7 @@
+<div class="card mt-2" *ngFor="let corrida of corridas | async">
+  <div class="card-body">
+    <h5 class="card-title">Nome do Motorista: {{corrida.nomeMotorista}}</h5>
+    <p class="card-text">Nome do Passageiro: {{corrida.nomePassageiro}}</p>
+    <p class="card-text">Valor da Corrida R$: {{corrida.valorCorrida}}</p>
+  </div>
+</div>

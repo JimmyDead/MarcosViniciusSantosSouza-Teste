@@ -1,0 +1,15 @@
+<div class="card mt-2" *ngFor="let motorista of motoristas | async">
+  <div class="card-body">
+    <h5 class="card-title">Nome: {{motorista.nome}}</h5>
+    <p class="card-text">Data de Nascimento: {{motorista.dataNascimento}}</p>
+    <p class="card-text">Cpf: {{motorista.cpf}}</p>
+    <p class="card-text">Modelo do Carro: {{motorista.modeloCarro}}</p>
+    <p class="card-text">Status do motorista: {{motorista.status}}</p>
+    <p class="card-text">Sexo: {{motorista.sexo}}</p>
+  </div>
+  <div class="card-footer">
+    <button type="button" class="btn btn-default" (click)="edit(motorista, motorista.key)">Editar</button>
+
+  </div>
+
+</div>

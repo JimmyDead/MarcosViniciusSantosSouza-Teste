@@ -1,0 +1,45 @@
+<form (ngSubmit)="onSubmit()">
+
+  <div class="form-group">
+    <label>Nome: </label>
+    <input type="text" class="form-control" [(ngModel)]="motorista.nome" name="nome" #nome="ngModel" required />
+  </div>
+
+  <div class="form-group">
+    <label>Data de Nascimento: </label>
+    <input type="text" class="form-control" [(ngModel)]="motorista.dataNascimento" name="dataNascimento"
+      #dataNascimento="ngModel" required />
+  </div>
+
+  <div class=" form-group">
+    <label>Cpf: </label>
+    <input type="text" class="form-control" [(ngModel)]="motorista.cpf" name="cpf" #cpf="ngModel" required />
+  </div>
+
+  <div class="form-group">
+    <label>Modelo do Carro: </label>
+    <input type="text" class="form-control" [(ngModel)]="motorista.modeloCarro" name="modeloCarro"
+      #modeloCarro="ngModel" required />
+  </div>
+
+  <div class="form-group">
+    <label>Status do Motorista: </label>
+    <br>
+    <input id='Masculino' [(ngModel)]="motorista.status" class="" type='radio' name='status' value='Ativo'
+      #status="ngModel" required /><label>Ativo</label>
+
+    <input id='Feminino' [(ngModel)]="motorista.status" class="" type='radio' name='status' value='Inativo'
+      #status="ngModel" required /><label>Inativo</label>
+  </div>
+
+  <div class="form-group">
+    <label>Sexo: </label>
+    <input type="text" class="form-control" [(ngModel)]="motorista.sexo" name="sexo" #sexo="ngModel" required />
+  </div>
+
+  <br>
+  <button type="submit" class="btn btn-primary">Cadastrar</button>
+
+
+
+</form>

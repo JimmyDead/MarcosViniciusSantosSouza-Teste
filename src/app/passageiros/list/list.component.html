@@ -1,0 +1,8 @@
+<div class="card mt-2" *ngFor="let passageiro of passageiros | async">
+  <div class="card-body">
+    <h5 class="card-title">Nome: {{passageiro.nome}}</h5>
+    <p class="card-text">Data de Nascimento: {{passageiro.dataNascimento}}</p>
+    <p class="card-text">Cpf: {{passageiro.cpf}}</p>
+    <p class="card-text">Sexo: {{passageiro.sexo}}</p>
+  </div>
+</div>

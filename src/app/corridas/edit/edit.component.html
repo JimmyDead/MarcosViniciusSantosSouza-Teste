@@ -1,0 +1,21 @@
+<form (ngSubmit)="onSubmit()">
+
+  <div class="form-group_1">
+    <label>Nome Do Motorista: </label>
+    <input type="text" class="form-control" [(ngModel)]="corrida.nomeMotorista" name="nomeMotorista" />
+  </div>
+
+  <div class="form-group_1">
+    <label>Nome Do Passageiro: </label>
+    <input type="text" class="form-control" [(ngModel)]="corrida.nomePassageiro" name="nomePassageiro" />
+  </div>
+
+  <div class="form-group_1">
+    <label>Valor Da Corrida: </label>
+    <input type="number" class="form-control" [(ngModel)]="corrida.valorCorrida" name="valorCorrida" />
+  </div>
+
+  <br>
+  <button type="submit" class="btn btn-primary">Cadastrar</button>
+
+</form>
